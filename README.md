@@ -4,3 +4,4 @@
 
 - 📂 Swift
 	- 📂 ViewSystem : 2021.09. 동아리 GROW iOS 기초교육 (총 4회)
+	- 📂 SimpleNewsApp : newsapi.org의 API를 사용하여 만든 간단한 뉴스 앱

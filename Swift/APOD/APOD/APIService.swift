@@ -7,7 +7,7 @@
 
 import Foundation
 class APIService {
-    static let apiKey = "GLCuUozsL1Ef33gnpS5Y8WqFLGdJ00ng1v5Wgv3n" // NASA API key
+    static let apiKey = "" // NASA API key
     static let fetchCount = 10
     static let apiURL = "https://api.nasa.gov/planetary/apod?api_key=\(apiKey)&count=\(fetchCount)"
 

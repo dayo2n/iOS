@@ -29,7 +29,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="6Bj-em-8IH" kind="custom" customClass="NewSegue" customModule="Scene_CustomSegue" customModuleProvider="target" id="dw0-h0-oha"/>
+                                    <segue destination="6Bj-em-8IH" kind="custom" identifier="custom_segue" customClass="NewSegue" customModule="Scene_CustomSegue" customModuleProvider="target" id="dw0-h0-oha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5h-6s-UDi">
+                                <rect key="frame" x="135" y="394" width="126" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action Segue"/>
+                                <connections>
+                                    <segue destination="6Bj-em-8IH" kind="presentation" identifier="action_segue" id="Mi2-ex-WDX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,7 +55,7 @@
             <objects>
                 <viewController id="6Bj-em-8IH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBe-fg-ERs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxU-wm-UDc">
@@ -66,6 +75,9 @@
             <point key="canvasLocation" x="877" y="4"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mi2-ex-WDX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="2b9-Bp-PVx">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="wR1-23-2jk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="wR1-23-2jk" customClass="SecondViewController" customModule="Scene_Transe01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUb-ek-Sex">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buP-Bn-YRa">
+                                <rect key="frame" x="166" y="264" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="wR1-23-2jk" eventType="touchUpInside" id="08R-AA-HyG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pxt-ff-Kyx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

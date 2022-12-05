@@ -29,15 +29,25 @@ class ViewController: UIViewController {
         
         
         
-        // get AppDelegate instance
-        let ad = UIApplication.shared.delegate as? AppDelegate
-
-        if let email = ad?.paramEmail { resultEmail.text = email }
-        if let update = ad?.paramUpdate { resultUpdate.text = update ? "자동 갱신" : "자동 갱신하지 않음" }
-        if let interval = ad?.paramInterval { resultInterval.text = "\(Int(interval))분마다"}
+//        // get AppDelegate instance
+//        let ad = UIApplication.shared.delegate as? AppDelegate
+//
+//        if let email = ad?.paramEmail { resultEmail.text = email }
+//        if let update = ad?.paramUpdate { resultUpdate.text = update ? "자동 갱신" : "자동 갱신하지 않음" }
+//        if let interval = ad?.paramInterval { resultInterval.text = "\(Int(interval))분마다"}
         
         
         
+        // get UserDefault instance
+        let ud = UserDefaults.standard
+        
+        if let email = ud.string(forKey: "email") { resultEmail.text = email }
+        // UserDefaults에서는 String만 Optional Type
+        let update = ud.bool(forKey: "isUpdate")
+        resultUpdate.text = update ? "자동 갱신" : "자동 갱신하지 않음"
+        
+        let interval = ud.double(forKey: "interval")
+        resultInterval.text = "\(Int(interval))분마다"
     }
 
 }

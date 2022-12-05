@@ -24,15 +24,28 @@ class FormViewController: UIViewController {
         
         
         
-        // get AppDelegate instance
-        let ad = UIApplication.shared.delegate as? AppDelegate
+//        // get AppDelegate instance
+//        let ad = UIApplication.shared.delegate as? AppDelegate
+//        
+//        // store values
+//        ad?.paramEmail = self.email.text
+//        ad?.paramUpdate = self.isUpdate.isOn
+//        ad?.paramInterval = self.interval.value
+//        
+//        // 이전 화면으로 복귀
+//        self.presentingViewController?.dismiss(animated: true)
+        
+        
+        
+        // get UserDefault instance
+        let ud = UserDefaults.standard
         
         // store values
-        ad?.paramEmail = self.email.text
-        ad?.paramUpdate = self.isUpdate.isOn
-        ad?.paramInterval = self.interval.value
+        ud.set(self.email.text, forKey: "email")
+        ud.set(self.isUpdate.isOn, forKey: "isUpdate")
+        ud.set(self.interval.value, forKey: "interval")
         
-        // 이전 화면으로 복귀
+        // back to previous view
         self.presentingViewController?.dismiss(animated: true)
     }
 }

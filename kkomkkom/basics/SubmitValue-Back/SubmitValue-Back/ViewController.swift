@@ -29,12 +29,12 @@ class ViewController: UIViewController {
         
         
         
-//        // get AppDelegate instance
-//        let ad = UIApplication.shared.delegate as? AppDelegate
-//
-//        if let email = ad?.paramEmail { resultEmail.text = email }
-//        if let update = ad?.paramUpdate { resultUpdate.text = update ? "자동 갱신" : "자동 갱신하지 않음" }
-//        if let interval = ad?.paramInterval { resultInterval.text = "\(Int(interval))분마다"}
+        // get AppDelegate instance
+        let ad = UIApplication.shared.delegate as? AppDelegate
+
+        if let email = ad?.paramEmail { resultEmail.text = email }
+        if let update = ad?.paramUpdate { resultUpdate.text = update ? "자동 갱신" : "자동 갱신하지 않음" }
+        if let interval = ad?.paramInterval { resultInterval.text = "\(Int(interval))분마다"}
         
         
         

@@ -148,4 +148,7 @@ xcuserdata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+### 코테풀이용 프로젝트 숨김 ###
+Swift/CodingTest
+
 # End of https://www.toptal.com/developers/gitignore/api/swiftpm,swift,swiftpackagemanager,cocoapods,xcode,macos

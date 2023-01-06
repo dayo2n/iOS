@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet var imgView: UIImageView!
     
@@ -28,6 +28,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+}
+
+// MARK: ImagePciker Controller Delegate Method
+extension ViewController: UIImagePickerControllerDelegate {
     
     // image picker에서 이미지를 선택하지 않고 취소했을 때 호출되는 메소드
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -52,3 +56,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 }
 
+// MARK: Navigation Controller Delegate Method
+extension ViewController: UINavigationControllerDelegate { }

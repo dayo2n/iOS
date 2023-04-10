@@ -8,3 +8,10 @@
 	- 📂 SimpleNewsApp : newsapi.org의 API를 사용하여 만든 간단한 뉴스 앱
 - 📂 kkomkkom/basic
    - 📂 . : 도서 '꼼꼼한 재은씨의 Swift: 기본편' 실습 내용
+
+---
+
+### SwiftUI
+| 종류 | 참고 링크 | 체크 |
+| ---- | ---- | ---- |
+| Styled toggle button | https://swiftui-lab.com/custom-styling/ | <ul><li>[ ] DONE</li></ul> |
